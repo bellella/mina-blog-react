@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://emoji-css.afeld.me/emoji.css');
+
+:root {
+  --post-gap: 20px;
+}
+
+html {
+  overflow-y: scroll;
+  //height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: .2px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+h1,h2,h3,h4,h5 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+a, p {
+  margin: 0;
+  color: #191919;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 1.44em;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.error_text {
+  color: crimson;
+}
+.secondary_text {
+  color: #afafaf;
+}
+
+.px_10 {
+  padding: 10px 0;
+}
+
+.mr_10 {
+  margin-right: 10px;
+}
+
+@supports (scrollbar-gutter: stable) {
+  html {
+    //overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+}
+
+/* form*/
+form {
+  .form_bottom {
+    padding: 20px 0;
+  }
+  .form_bttn {
+    text-transform: uppercase;
+  }
+  .form_group {
+    margin-bottom: 10px;
+    .form_label {
+      display: block;
+      text-transform: uppercase;
+    }
+    .form_input, .form_textarea {
+      width: 100%;
+      border: 1px solid #dadada;
+      padding: 8px 18px;
+      resize: none;
+    }
+  }
+}
+
+.bttn {
+  border: none;
+  background: #000;
+  color: #fff;
+  padding: 15px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  text-transform: u;
+  cursor: pointer;
+  &.inline_bttn {
+    display: inline;
+  }
+  &.sm_bttn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+/* animation */
+main > div {
+  position :relative;
+}
+
+.content-enter {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width:100%;
+}
+.content-exit {
+  opacity: 1;
+}
+.content-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.content-enter-done {
+  opacity: 1;
+  transition: opacity 500ms;
+}

@@ -1,0 +1,26 @@
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+}
+
+.header_top {
+  //height: 30px;
+  background: #dadada;
+  .etc_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 4px;
+    .etc_item {
+      &:last-child {
+        justify-self: end;
+      }
+      .write_bttn {
+        background: #009688;
+      }
+    }
+  }
+}
+
